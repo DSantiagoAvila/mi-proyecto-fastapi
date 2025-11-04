@@ -11,7 +11,9 @@ from services.recors_service import (
 app = FastAPI(title="Prueba Técnica CRUD + SOLID + API", version="1.0.0")
 
 
+# ====================================================
 #             ENDPOINTS PRINCIPALES (API)
+# ====================================================
 
 @app.get("/")
 def read_root():
@@ -57,8 +59,9 @@ def mejorar_registros(user_id: str, db: Session = Depends(get_db)):
     }
 
 
-
+# ====================================================
 #                    CRUD MANUAL
+# ====================================================
 
 @app.get("/procesos/{id}")
 def obtener_proceso(id: int, db: Session = Depends(get_db)):
