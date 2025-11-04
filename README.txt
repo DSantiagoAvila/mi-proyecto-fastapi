@@ -81,6 +81,28 @@ DELETE	/procesos/{id}	            Elimina un proceso de la BD
 POST	/mejorar/{user_id}	        Repite llamadas al API para mejorar los registros bad
 GET	    /reporte (opcional)         Devuelve estadísticas globales
 
+Al utilizar FastAPI, se pueden probar todos los endpoints de forma interactiva gracias a su interfaz automática de documentación.
+Abre tu navegador en:
+
+http://127.0.0.1:8000/docs
+
+
+#Carga inicial y barridos
+
+Todos los procesos de carga de datos y barridos se ejecutan directamente desde la interfaz web de FastAPI.
+
+Al tener abierto en tu navegador:
+http://127.0.0.1:8000/docs
+
+*Busca el endpoint correspondiente al proceso que quieras ejecutar.
+
+*Envía la petición desde la interfaz de FastAPI.
+
+*Observa los resultados en la terminal; ahí se mostrarán los datos que fueron procesados o modificados.
+
+**No es necesario ejecutar scripts adicionales ni usar Postman o cURL. Todo se controla desde la interfaz interactiva de FastAPI.**
+
+
 Lógica de Categorización
 
 La categoría se asigna automáticamente según el value:
@@ -88,9 +110,9 @@ La categoría se asigna automáticamente según el value:
 Rango de Value	Categoría
 0 – 60	bad
 61 – 85	medium
-86 – 100	good
+86 – 100 good
 
-🧾 Autor
+Autor
 
 Nombre: Daniel Santiago Avila Ramirez 
 Lenguaje: Python 3.13.9
