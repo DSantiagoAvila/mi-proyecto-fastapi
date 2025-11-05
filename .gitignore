@@ -1,0 +1,37 @@
+# --- Entorno virtual ---
+venv/
+
+# --- Archivos de configuración privada ---
+.env
+*.env
+config.json
+secrets.json
+
+# --- Archivos de caché de Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# --- Archivos de logs ---
+*.log
+
+# --- Archivos de sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Configuraciones de editores ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Archivos de pruebas temporales ---
+*.bak
+*.tmp
+*.swp
+
+# --- Archivos de compilación o distribución ---
+build/
+dist/
+*.egg-info/
